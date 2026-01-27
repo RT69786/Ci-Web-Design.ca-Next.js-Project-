@@ -1,0 +1,78 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main02 {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 0px;
+  background-color: #0f1925;
+
+  .for-center-main02 {
+    // border: 2px solid blue;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     @include breakpoint(tablet){
+          width: 90%;
+        }
+
+    h3 {
+      font-size: 23px;
+      text-align: center;
+      color: white;
+      padding-bottom: 20px;
+      font-weight: 500;
+
+      @include breakpoint(mobile-sm){
+        font-size: 20px;
+      }
+    }
+
+    .four-logo-images {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include breakpoint(mobile-lg){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+        // border: 2px solid red;
+        width: 18%;
+
+        @include breakpoint(mobile-lg){
+          width: 65%;
+    
+        }
+      }
+
+      .special-pic-1{
+        // border: 2px solid red;
+
+        @include breakpoint(mobile-lg){
+          padding: 35px 0px;
+        }
+      }
+
+       .special-pic-2{
+        // border: 2px solid red;
+
+        @include breakpoint(mobile-lg){
+          padding: 35px 0px;
+        }
+
+        @include breakpoint(mobile-sm){
+          padding: 25px 0px;
+        }
+      }
+    }
+  }
+}

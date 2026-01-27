@@ -1,0 +1,215 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main01 {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  background-color: #0f1925;
+
+  @include breakpoint(tablet-lg) {
+    padding: 55px 0px;
+  }
+
+  @include breakpoint(mobile-lg) {
+    padding: 25px 0px;
+  }
+
+  .for-center-main01 {
+    // border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: 100%;
+
+    @include breakpoint(desktop) {
+      width: 95%;
+    }
+
+    @include breakpoint(tablet-lg) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .div-one {
+      // border: 2px solid green;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      @include breakpoint(desktop) {
+        width: 55%;
+      }
+
+      @include breakpoint(laptop-sm) {
+        width: 50%;
+      }
+
+      @include breakpoint(tablet-lg) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 45px;
+      }
+
+      @include breakpoint(mobile-lg) {
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 55px;
+        line-height: 1.2;
+        padding-bottom: 25px;
+        font-weight: 450;
+        color: white;
+
+        @include breakpoint(laptop-md) {
+          font-size: 50px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          font-size: 45px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          text-align: center;
+        }
+
+        @include breakpoint(mobile-lg) {
+          font-size: 40px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          font-size: 38px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          font-size: 35px;
+        }
+      }
+
+      h3 {
+        font-size: 24px;
+        line-height: 1.4;
+        padding-bottom: 25px;
+        font-weight: 500;
+        color: #c7c7c7;
+
+        @include breakpoint(laptop-sm) {
+          font-size: 21px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          text-align: center;
+        }
+
+        @include breakpoint(tablet){
+          width: 90%;
+        }
+
+        @include breakpoint(mobile-lg) {
+          font-size: 20px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          font-size: 18px;
+        }
+
+        @include breakpoint(mobile-xxs){
+          width: 100%;
+        }
+      }
+
+      .for-button1 {
+        // border: 2px solid red;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+
+        @include breakpoint(laptop-md) {
+          width: 40%;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 43%;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 30%;
+        }
+
+        @include breakpoint(tablet) {
+          width: 40%;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 70%;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 75%;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 80%;
+        }
+      }
+
+      .five-gold-star {
+        // border: 2px solid green;
+        padding-bottom: 25px;
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 18px;
+        padding-bottom: 25px;
+        color: white;
+        font-weight: 400;
+        line-height: 1.4;
+
+        @include breakpoint(tablet-lg) {
+          text-align: center;
+          width: 95%;
+        }
+
+          @include breakpoint(tablet){
+          width: 90%;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 95%;
+          font-size: 16px;
+        }
+      }
+
+      .ceo-founder-box {
+        // border: 2px solid purple;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(tablet-lg) {
+          text-align: center;
+        }
+
+        h6 {
+          font-size: 14px;
+          color: white;
+          padding: 2px 0px;
+        }
+      }
+    }
+
+    // .div-two {
+    //   // border: 2px solid purple;
+
+    // }
+  }
+}

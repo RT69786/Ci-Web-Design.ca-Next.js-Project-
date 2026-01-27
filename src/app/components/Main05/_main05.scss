@@ -1,0 +1,579 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main05 {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  background-color: #f6f7fa;
+
+  .for-center-main05 {
+    // border: 2px solid blue;
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(desktop) {
+      width: 95%;
+    }
+
+    .div-ten {
+      // border: 2px solid green;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 65px;
+
+      @include breakpoint(tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+      }
+
+      h2 {
+        font-size: 45px;
+        font-weight: 400;
+
+        @include breakpoint(laptop-sm) {
+          font-size: 40px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          text-align: center;
+        }
+
+        @include breakpoint(mobile-lg) {
+          font-size: 30px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          font-size: 28px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .div-eleven {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 75px;
+
+      @include breakpoint(laptop) {
+        margin-bottom: 60px;
+      }
+
+      @include breakpoint(laptop-md) {
+        margin-bottom: 50px;
+      }
+
+      @include breakpoint(laptop-sm) {
+        margin-bottom: 55px;
+      }
+
+      @include breakpoint(tablet-lg) {
+        margin-bottom: 35px;
+      }
+
+      @include breakpoint(tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+      }
+
+      .box-one {
+        // border: 2px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+
+        @include breakpoint(laptop) {
+          width: 400px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 300px;
+        }
+
+        @include breakpoint(tablet) {
+          width: 480px;
+          margin-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 410px;
+        }
+
+        @include breakpoint(mobile-md) {
+          width: 390px;
+        }
+
+        @include breakpoint(mobile) {
+          width: 370px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          width: 340px;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 320px;
+        }
+      }
+
+      .box-two {
+        // border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+
+        @include breakpoint(laptop) {
+          width: 400px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 300px;
+        }
+
+        @include breakpoint(tablet) {
+          width: 480px;
+          margin-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 410px;
+        }
+
+        @include breakpoint(mobile-md) {
+          width: 390px;
+        }
+
+        @include breakpoint(mobile) {
+          width: 370px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          width: 340px;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 320px;
+        }
+      }
+
+      .box-three {
+        // border: 2px solid blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+
+        @include breakpoint(laptop) {
+          width: 400px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 300px;
+        }
+
+        @include breakpoint(tablet) {
+          width: 480px;
+          margin-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 410px;
+        }
+
+        @include breakpoint(mobile-md) {
+          width: 390px;
+        }
+
+        @include breakpoint(mobile) {
+          width: 370px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          width: 340px;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 320px;
+        }
+      }
+    }
+
+    .div-twelve {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 75px;
+
+      @include breakpoint(laptop) {
+        margin-bottom: 60px;
+      }
+
+      @include breakpoint(laptop-md) {
+        margin-bottom: 50px;
+      }
+
+      @include breakpoint(laptop-sm) {
+        margin-bottom: 55px;
+      }
+
+      @include breakpoint(tablet-lg) {
+        margin-bottom: 35px;
+      }
+
+      @include breakpoint(tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+      }
+
+      .box-one {
+        // border: 2px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+
+        @include breakpoint(laptop) {
+          width: 400px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 300px;
+        }
+
+        @include breakpoint(tablet) {
+          width: 480px;
+          margin-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 410px;
+        }
+
+        @include breakpoint(mobile-md) {
+          width: 390px;
+        }
+
+        @include breakpoint(mobile) {
+          width: 370px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          width: 340px;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 320px;
+        }
+      }
+
+      .box-two {
+        // border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+
+        @include breakpoint(laptop) {
+          width: 400px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 300px;
+        }
+
+        @include breakpoint(tablet) {
+          width: 480px;
+          margin-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 410px;
+        }
+
+        @include breakpoint(mobile-md) {
+          width: 390px;
+        }
+
+        @include breakpoint(mobile) {
+          width: 370px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          width: 340px;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 320px;
+        }
+      }
+
+      .box-three {
+        // border: 2px solid blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+
+        @include breakpoint(laptop) {
+          width: 400px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 300px;
+        }
+
+        @include breakpoint(tablet) {
+          width: 480px;
+          margin-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 410px;
+        }
+
+        @include breakpoint(mobile-md) {
+          width: 390px;
+        }
+
+        @include breakpoint(mobile) {
+          width: 370px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          width: 340px;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 320px;
+        }
+      }
+    }
+
+    .div-thirteen {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include breakpoint(tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box-one {
+        // border: 2px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+
+        @include breakpoint(laptop) {
+          width: 400px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 300px;
+        }
+
+        @include breakpoint(tablet) {
+          width: 480px;
+          margin-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 410px;
+        }
+
+        @include breakpoint(mobile-md) {
+          width: 390px;
+        }
+
+        @include breakpoint(mobile) {
+          width: 370px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          width: 340px;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 320px;
+        }
+      }
+
+      .box-two {
+        // border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+
+        @include breakpoint(laptop) {
+          width: 400px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 300px;
+        }
+
+        @include breakpoint(tablet) {
+          width: 480px;
+          margin-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 410px;
+        }
+
+        @include breakpoint(mobile-md) {
+          width: 390px;
+        }
+
+        @include breakpoint(mobile) {
+          width: 370px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          width: 340px;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 320px;
+        }
+      }
+
+      .box-three {
+        // border: 2px solid blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+
+        @include breakpoint(laptop) {
+          width: 400px;
+        }
+
+        @include breakpoint(laptop-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 300px;
+        }
+
+        @include breakpoint(tablet) {
+          width: 480px;
+          margin-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          width: 410px;
+        }
+
+        @include breakpoint(mobile-md) {
+          width: 390px;
+        }
+
+        @include breakpoint(mobile) {
+          width: 370px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          width: 350px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          width: 340px;
+        }
+
+        @include breakpoint(mobile-xxs) {
+          width: 320px;
+        }
+      }
+    }
+  }
+}

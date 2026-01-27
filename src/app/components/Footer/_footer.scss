@@ -1,0 +1,212 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.footer {
+//   border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  background-color: #0f1925;
+
+  @include breakpoint(mobile-lg){
+    padding: 35px 0px;
+  }
+
+  .for-center-footer {
+    // border: 2px solid blue;
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint(desktop){
+      width: 95%;
+    }
+
+    .div-fifteen {
+      //   border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      img {
+        width: 200px;
+
+         @include breakpoint(mobile-lg) {
+        width: 265px;
+        padding-bottom: 20px;
+      }
+      }
+
+      h2 {
+        font-size: 45px;
+        color: white;
+        margin-bottom: 20px;
+
+          @include breakpoint(laptop-sm) {
+          font-size: 40px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          text-align: center;
+          width: 85%;
+          line-height: 1.2;
+        }
+
+        @include breakpoint(tablet){
+          width: 100%;
+        }
+
+        @include breakpoint(mobile-lg) {
+          font-size: 30px;
+        }
+
+        @include breakpoint(mobile){
+          font-size: 28px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          font-size: 25px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          font-size: 24px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        color: #c7c7c7;
+        margin-bottom: 20px;
+
+        @include breakpoint(mobile-lg){
+          text-align: center;
+        }
+
+        @include breakpoint(mobile-sm){
+          font-size: 16px;
+        }
+      }
+
+      .button-div {
+        // border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .div-sixteen {
+      // border: 2px solid green;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 50px 0px;
+
+      @include breakpoint(mobile-lg){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 35px 0px;
+      }
+
+      .number-div {
+        // border: 2px solid red;
+
+        @include breakpoint(mobile-lg){
+          padding-bottom: 25px;
+        }
+
+        p {
+          color: white;
+          font-size: 23px;
+
+          @include breakpoint(tablet-lg){
+            font-size: 20px;
+          }
+        }
+      }
+
+      .icon-div {
+        // border: 2px solid blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 6%;
+
+        @include breakpoint(tablet-lg){
+          width: 8%;
+        }
+
+        @include breakpoint(tablet){
+          width: 9%;
+        }
+
+        @include breakpoint(mobile-lg){
+          width: 17%;
+        }
+
+        @include breakpoint(mobile-xs){
+          width: 20%;
+        }
+
+        @include breakpoint(mobile-xxs){
+          width: 20%;
+        }
+
+        i {
+          color: white;
+          font-size: 30px;
+        }
+      }
+    }
+
+    .div-seventeen {
+        // border: 2px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 25px 0px;
+
+        @include breakpoint(mobile-lg){
+          margin: 20px 0px;
+        }
+        
+
+        .white-line {
+            background-color: #c7c7c7;
+            padding: 1px 0px;
+            margin-bottom: 25px;
+            opacity: 0.2;
+        }
+
+        .h6-tag {
+            // border: 2px solid greenyellow;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include breakpoint(mobile-lg){
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+
+
+            h6 {
+                // font-size: ;
+                color: white;
+
+                @include breakpoint(mobile-lg){
+                  font-size: 16px;
+                  padding: 10px;
+                }
+            }
+        }
+    }
+  }
+}

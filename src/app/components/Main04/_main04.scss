@@ -1,0 +1,414 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main04 {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 0px;
+
+  .for-center-main04 {
+    // border: 2px solid blue;
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint(desktop) {
+      width: 95%;
+    }
+
+    @include breakpoint(tablet-lg) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .div-six {
+      //   border: 2px solid blue;
+
+      img {
+        width: 500px;
+
+        @include breakpoint(laptop) {
+          width: 450px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          width: 480px;
+        }
+
+        // @include breakpoint(laptop-md){
+        //   width: 420px;
+        // }
+      }
+    }
+
+    .div-seven {
+      // border: 2px solid green;
+      display: flex;
+      flex-direction: column;
+
+      @include breakpoint(desktop) {
+        width: 65%;
+      }
+
+      @include breakpoint(laptop) {
+        width: 63%;
+      }
+
+      @include breakpoint(laptop-md) {
+        width: 60%;
+      }
+
+      @include breakpoint(tablet-lg) {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      h2 {
+        font-size: 45px;
+        font-weight: 500;
+        padding-bottom: 25px;
+
+        @include breakpoint(desktop) {
+          line-height: 1.2;
+        }
+
+        @include breakpoint(laptop-sm) {
+          font-size: 40px;
+        }
+
+        @include breakpoint(tablet-lg) {
+          text-align: center;
+        }
+
+        @include breakpoint(mobile-lg) {
+          font-size: 30px;
+        }
+
+        @include breakpoint(mobile-sm) {
+          font-size: 28px;
+        }
+
+        @include breakpoint(mobile-xs) {
+          font-size: 26px;
+        }
+      }
+
+      .box-one {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0px;
+        // width: 20%;
+
+        @include breakpoint(tablet-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 0px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .icon-h3 {
+          // border: 2px solid blue;
+          display: flex;
+          // justify-content: center;
+
+          i {
+            font-size: 20px;
+            font-weight: 800;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+
+          h3 {
+            font-size: 20px;
+            padding-left: 13px;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .one-gray-line {
+          background-color: rgb(219, 218, 218);
+          padding: 1px;
+          margin-top: 10px;
+          width: 400px;
+        }
+      }
+
+      .box-two {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0px;
+        // width: 20%;
+
+        @include breakpoint(tablet-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 0px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .icon-h3 {
+          //   border: 2px solid blue;
+          display: flex;
+          // justify-content: center;
+
+          i {
+            font-size: 20px;
+            font-weight: 800;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+
+          h3 {
+            font-size: 20px;
+            padding-left: 13px;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .one-gray-line {
+          background-color: rgb(219, 218, 218);
+          padding: 1px;
+          margin-top: 10px;
+          width: 400px;
+        }
+      }
+
+      .box-three {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0px;
+        // width: 20%;
+
+        @include breakpoint(tablet-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 0px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .icon-h3 {
+          //   border: 2px solid blue;
+          display: flex;
+          // justify-content: center;
+
+          i {
+            font-size: 20px;
+            font-weight: 800;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+
+          h3 {
+            font-size: 20px;
+            padding-left: 13px;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .one-gray-line {
+          background-color: rgb(219, 218, 218);
+          padding: 1px;
+          margin-top: 10px;
+          width: 400px;
+        }
+      }
+
+      .box-four {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0px;
+        // width: 20%;
+
+        @include breakpoint(tablet-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 0px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .icon-h3 {
+          //   border: 2px solid blue;
+          display: flex;
+          // justify-content: center;
+
+          i {
+            font-size: 20px;
+            font-weight: 800;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+
+          h3 {
+            font-size: 20px;
+            padding-left: 13px;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .one-gray-line {
+          background-color: rgb(219, 218, 218);
+          padding: 1px;
+          margin-top: 10px;
+          width: 400px;
+        }
+      }
+
+      .box-five {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0px;
+        // width: 20%;
+
+        @include breakpoint(tablet-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 0px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .icon-h3 {
+          //   border: 2px solid blue;
+          display: flex;
+          // justify-content: center;
+
+          i {
+            font-size: 20px;
+            font-weight: 800;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+
+          h3 {
+            font-size: 20px;
+            padding-left: 13px;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .one-gray-line {
+          background-color: rgb(219, 218, 218);
+          padding: 1px;
+          margin-top: 10px;
+          width: 400px;
+        }
+      }
+
+      .box-six {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0px;
+        // width: 20%;
+
+        @include breakpoint(tablet-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 0px;
+        }
+
+        @include breakpoint(mobile-lg) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .icon-h3 {
+          //   border: 2px solid blue;
+          display: flex;
+          // justify-content: center;
+
+          i {
+            font-size: 20px;
+            font-weight: 800;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+
+          h3 {
+            font-size: 20px;
+            padding-left: 13px;
+
+            @include breakpoint(mobile-lg) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .one-gray-line {
+          background-color: rgb(219, 218, 218);
+          padding: 1px;
+          margin-top: 10px;
+          width: 400px;
+        }
+      }
+    }
+  }
+}
