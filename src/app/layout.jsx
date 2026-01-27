@@ -1,14 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Red_Hat_Display } from "next/font/google";
 import "./globals.scss";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Import Red Hat Display as a Google Font
+const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "700"], // Add any weights you need
+  variable: "--font-red-hat-display",
+  display: "swap",
 });
 
 export const metadata = {
@@ -18,19 +16,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={redHatDisplay.variable}>
       <head>
         <link
           href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
           rel="stylesheet"
+
         />
 
-        
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="antialiased">{children}
+       
       </body>
     </html>
   );
