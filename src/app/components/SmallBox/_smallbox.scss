@@ -61,6 +61,10 @@
       margin-right: 10px;
       font-weight: 600;
       transition: color 0.25s ease; // smooth color change
+
+      @include breakpoint (mobile-xxs){
+        font-size: 20px;
+      }
     }
 
     .arrow-icon {
