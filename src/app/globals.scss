@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: "Geist", sans-serif;
-  --font-mono: "Geist Mono", monospace;
+ --font-sans: var(--font-red-hat-display); /* Red Hat Display for sans */
+  --font-mono: var(--font-red-hat-display); /* If you want, you can keep same for mono */
 }
 
 /* Form elements clean-up */
@@ -27,6 +27,7 @@ select {
 
 html,
 body {
+   font-family: var(--font-sans), sans-serif;
   overflow: hidden;
   height: 100%;
   overflow-y: auto;
