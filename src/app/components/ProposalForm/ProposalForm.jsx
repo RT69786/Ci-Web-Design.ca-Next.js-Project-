@@ -17,32 +17,68 @@ const ProposalForm = () => {
 
   const stepContent = [
     <>
-      <label><input type="radio" name="type" /> Business</label>
-      <label><input type="radio" name="type" /> E-commerce / Online store</label>
-      <label><input type="radio" name="type" /> Non-profit</label>
-      <label><input type="radio" name="type" /> Personal website</label>
-      <label><input type="radio" name="type" /> I'm not sure</label>
-      <label><input type="radio" name="type" /> Other</label>
+      <label>
+        <input type="radio" name="type" /> Business
+      </label>
+      <label>
+        <input type="radio" name="type" /> E-commerce / Online store
+      </label>
+      <label>
+        <input type="radio" name="type" /> Non-profit
+      </label>
+      <label>
+        <input type="radio" name="type" /> Personal website
+      </label>
+      <label>
+        <input type="radio" name="type" /> I'm not sure
+      </label>
+      <label>
+        <input type="radio" name="type" /> Other
+      </label>
     </>,
     <>
-      <label><input type="radio" name="need" /> New website</label>
-      <label><input type="radio" name="need" /> Redesign</label>
-      <label><input type="radio" name="need" /> Small changes</label>
+      <label>
+        <input type="radio" name="need" /> New website
+      </label>
+      <label>
+        <input type="radio" name="need" /> Redesign
+      </label>
+      <label>
+        <input type="radio" name="need" /> Small changes
+      </label>
     </>,
     <>
-      <label><input type="radio" name="goal" /> Get leads</label>
-      <label><input type="radio" name="goal" /> Sell products</label>
-      <label><input type="radio" name="goal" /> Share information</label>
+      <label>
+        <input type="radio" name="goal" /> Get leads
+      </label>
+      <label>
+        <input type="radio" name="goal" /> Sell products
+      </label>
+      <label>
+        <input type="radio" name="goal" /> Share information
+      </label>
     </>,
     <>
-      <label><input type="radio" name="start" /> ASAP</label>
-      <label><input type="radio" name="start" /> In a few weeks</label>
-      <label><input type="radio" name="start" /> In 2–3 months</label>
+      <label>
+        <input type="radio" name="start" /> ASAP
+      </label>
+      <label>
+        <input type="radio" name="start" /> In a few weeks
+      </label>
+      <label>
+        <input type="radio" name="start" /> In 2–3 months
+      </label>
     </>,
     <>
-      <label><input type="radio" name="budget" /> Under $1,000</label>
-      <label><input type="radio" name="budget" /> $1,000 – $3,000</label>
-      <label><input type="radio" name="budget" /> $5,000+</label>
+      <label>
+        <input type="radio" name="budget" /> Under $1,000
+      </label>
+      <label>
+        <input type="radio" name="budget" /> $1,000 – $3,000
+      </label>
+      <label>
+        <input type="radio" name="budget" /> $5,000+
+      </label>
     </>,
     <>
       <input type="text" placeholder="Your name" required />
@@ -58,18 +94,25 @@ const ProposalForm = () => {
     <section className="proposal-section">
       <h1>Get free quotes within minutes</h1>
       <p className="proposal-desc">
-        We’ll be in touch to book a discovery call shortly after you submit the form below 😃
+        We’ll be in touch to book a discovery call shortly after you submit the
+        form below 😃
       </p>
 
       {/* STEP INDICATOR */}
       <div className="steps-indicator">
         {steps.map((label, index) => (
           <div className="step" key={index}>
-            <div className={`circle ${index === step ? "current" : index < step ? "completed" : ""}`}>
+            <div
+              className={`circle ${index === step ? "current" : index < step ? "completed" : ""}`}
+            >
               {index === step ? "★" : index + 1}
             </div>
             <div className="label">
-              {index === 0 ? "Step 1" : index === steps.length - 1 ? "Final" : `Step ${index + 1}`}
+              {index === 0
+                ? "Step 1"
+                : index === steps.length - 1
+                  ? "Final"
+                  : `Step ${index + 1}`}
             </div>
           </div>
         ))}
@@ -77,7 +120,9 @@ const ProposalForm = () => {
 
       <form className="proposal-form">
         <fieldset>
-          <legend>{steps[step]}</legend>
+          <legend className="legend">
+            <h3>What type of website are you looking for?</h3>
+          </legend>
           {stepContent[step]}
         </fieldset>
 

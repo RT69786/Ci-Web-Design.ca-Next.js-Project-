@@ -18,8 +18,9 @@
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 10px;
+    font-weight: 510;
 
     @include breakpoint(desktop) {
       line-height: 1.2;
@@ -83,11 +84,34 @@
   gap: 25px;
 
   fieldset {
+    // border: 2px solid red;
     border: none;
     display: flex;
     flex-direction: column;
     gap: 12px;
     text-align: left;
+    
+
+    .legend {
+      // border: 2px solid red;
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 24px;
+
+        @include breakpoint(mobile-lg){
+          font-size: 20px;
+        }
+
+        @include breakpoint(mobile){
+          font-size: 18px;
+        }
+
+        @include breakpoint(mobile-xs){
+          font-size: 17px;
+        }
+      }
+    }
   }
 
   input,
