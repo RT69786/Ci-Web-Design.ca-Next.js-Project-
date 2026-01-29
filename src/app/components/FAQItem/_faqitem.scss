@@ -17,9 +17,9 @@
     font-weight: 600;
     margin-bottom: 20px;
 
-    @include breakpoint(mobile-lg) {
-      text-align: center;
-    }
+    // @include breakpoint(mobile-lg) {
+    //   text-align: center;
+    // }
   }
 }
 
@@ -28,7 +28,8 @@
   /* no rotation */
 
   @include breakpoint(mobile-lg) {
-    display: none;
+    margin-right: 15px;
+    // margin-top: 10px;
   }
 }
 
@@ -42,8 +43,8 @@
   p {
     margin-bottom: 14px;
 
-    @include breakpoint(mobile-lg) {
-      text-align: center;
-    }
+    // @include breakpoint(mobile-lg) {
+    //   text-align: center;
+    // }
   }
 }
