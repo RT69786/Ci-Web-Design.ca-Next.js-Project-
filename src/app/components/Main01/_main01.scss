@@ -133,6 +133,8 @@
         align-items: center;
         margin-bottom: 25px;
 
+
+
         @include breakpoint(laptop-md) {
           width: 40%;
         }
@@ -151,6 +153,9 @@
 
         @include breakpoint(mobile-lg) {
           width: 70%;
+          display: flex;
+          justify-content: center;
+          
         }
 
         @include breakpoint(mobile-sm) {
